@@ -2,7 +2,8 @@ package Gestion_habitats;
 
 public class terrestres extends habitats    {
 
-    public terrestres() {
+    public terrestres(float temperatura,float humedad,boolean limpieza) {
+        super(temperatura, humedad, limpieza);
     }
 
     @Override

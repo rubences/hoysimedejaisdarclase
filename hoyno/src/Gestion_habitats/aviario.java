@@ -1,7 +1,9 @@
 package Gestion_habitats;
 
-public class aviario extends Gestion_habitats.habitats {
-    public aviario() {
+public class aviario extends habitats {
+
+    public aviario(float temperatura,float humedad,boolean limpieza) {
+        super(temperatura, humedad, limpieza);
     }
     public String toString() {
         return "aviario []";

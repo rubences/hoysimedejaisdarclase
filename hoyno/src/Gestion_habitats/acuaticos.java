@@ -2,7 +2,8 @@ package Gestion_habitats;
 
 public class acuaticos extends habitats{
 
-    public acuaticos() {
+    public acuaticos(float temperatura,float humedad,boolean limpieza) {
+        super(temperatura, humedad, limpieza);
     }
 
 
