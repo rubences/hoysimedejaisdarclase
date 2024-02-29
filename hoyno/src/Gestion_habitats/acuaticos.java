@@ -2,8 +2,11 @@ package Gestion_habitats;
 
 public class acuaticos extends habitats{
 
-    public acuaticos(float temperatura,float humedad,boolean limpieza) {
+    boolean puede_nadar;
+
+    public acuaticos(float temperatura,float humedad,boolean limpieza,boolean puede_nadar) {
         super(temperatura, humedad, limpieza);
+        this.puede_nadar = puede_nadar;
     }
 
 
@@ -34,6 +37,16 @@ public class acuaticos extends habitats{
     public int hashCode() {
         // TODO Auto-generated method stub
         return super.hashCode();
+    }
+
+
+    public boolean isPuede_nadar() {
+        return puede_nadar;
+    }
+
+
+    public void setPuede_nadar(boolean puede_nadar) {
+        this.puede_nadar = puede_nadar;
     }
     
 }

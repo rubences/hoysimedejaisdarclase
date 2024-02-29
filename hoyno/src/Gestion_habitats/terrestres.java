@@ -2,8 +2,11 @@ package Gestion_habitats;
 
 public class terrestres extends habitats    {
 
-    public terrestres(float temperatura,float humedad,boolean limpieza) {
+    boolean puede_caminar;
+
+    public terrestres(float temperatura,float humedad,boolean limpieza, boolean puede_caminar) {
         super(temperatura, humedad, limpieza);
+        this.puede_caminar = puede_caminar;
     }
 
     @Override
@@ -33,6 +36,14 @@ public class terrestres extends habitats    {
     public int hashCode() {
         // TODO Auto-generated method stub
         return super.hashCode();
+    }
+
+    public boolean isPuede_caminar() {
+        return puede_caminar;
+    }
+
+    public void setPuede_caminar(boolean puede_caminar) {
+        this.puede_caminar = puede_caminar;
     }
     
 }
