@@ -18,10 +18,12 @@ public class animal {
     String cuidados;
     String enfermedades;
     String vacunas;
+    boolean salud;
+    boolean comportamiento;
     int id;
 
 
-    public animal(String nombre, String especie, String raza, String color, String sexo, String edad, String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion, String cuidados, String enfermedades, String vacunas, int id) {
+    public animal(String nombre, String especie, String raza, String color, String sexo, String edad, String peso, String altura, String tipo, String habitat, String alimentacion, String reproduccion, String cuidados, String enfermedades, String vacunas, int id, boolean salud, boolean comportamiento) {
         this.nombre = nombre;
         this.especie = especie;
         this.raza = raza;
@@ -38,6 +40,8 @@ public class animal {
         this.enfermedades = enfermedades;
         this.vacunas = vacunas;
         this.id = id;
+        this.salud = salud;
+        this.comportamiento = comportamiento;
     }
 
 
@@ -229,6 +233,113 @@ public class animal {
     public void setId(int id) {
         this.id = id;
     }
+
+    public boolean isSalud() {
+        return salud;
+    }
+
+    public void setSalud(boolean salud) {
+        this.salud = salud;
+    }
+
+    public boolean isComportamiento() {
+        return comportamiento;
+    }
+
+    public void setComportamiento(boolean comportamiento) {
+        this.comportamiento = comportamiento;
+    }
+
+    public void buenasalud(boolean salud) {
+        if (salud == true)
+            System.out.println("El animal " + nombre + " se encuentra en buen estado de salud");
+        else
+            System.out.println("El animal " + nombre + " se encuentra en mal estado de salud");
+    }
+
+    public void buencomportamiento(boolean comportamiento) {
+        if (comportamiento == true)
+            System.out.println("El animal " + nombre + " se encuentra en buen estado de comportamiento");
+        else
+            System.out.println("El animal " + nombre + " se encuentra en mal estado de comportamiento");
+    }
+
+    //metodo para registrar la alimentación
+    public void registrarAlimentacion(String alimento) {
+        System.out.println("El animal " + nombre + " ha sido alimentado con " + alimento);
+    }
+
+    //metodo para registrar la reproducción
+    public void registrarReproduccion(String pareja) {
+        System.out.println("El animal " + nombre + " ha tenido una relación con " + pareja);
+    }
+    //metodo para registrar los cuidados
+    public void registrarCuidados(String cuidado) {
+        System.out.println("El animal " + nombre + " ha sido cuidado con " + cuidado);
+    }
+    //metodo para registrar las enfermedades
+    public void registrarEnfermedades(String enfermedad) {
+        System.out.println("El animal " + nombre + " ha sido diagnosticado con " + enfermedad);
+    }
+    //metodo para registrar las vacunas
+    public void registrarVacunas(String vacuna) {
+        System.out.println("El animal " + nombre + " ha sido vacunado con " + vacuna);
+    }
+    //metodo para registrar el habitat
+    public void registrarHabitat(String habitat) {
+        System.out.println("El animal " + nombre + " ha sido trasladado a " + habitat);
+    }
+    //metodo para registrar el peso
+    public void registrarPeso(String peso) {
+        System.out.println("El animal " + nombre + " ha sido pesado y su peso es " + peso);
+    }
+    //metodo para registrar la altura
+    public void registrarAltura(String altura) {
+        System.out.println("El animal " + nombre + " ha sido medido y su altura es " + altura);
+    }
+    //metodo para registrar la edad
+    public void registrarEdad(String edad) {
+        System.out.println("El animal " + nombre + " ha sido medido y su edad es " + edad);
+    }
+    //metodo para registrar el color
+    public void registrarColor(String color) {
+        System.out.println("El animal " + nombre + " ha sido medido y su color es " + color);
+    }
+    //metodo para registrar la raza
+    public void registrarRaza(String raza) {
+        System.out.println("El animal " + nombre + " ha sido medido y su raza es " + raza);
+    }
+    //metodo para registrar la especie
+    public void registrarEspecie(String especie) {
+        System.out.println("El animal " + nombre + " ha sido medido y su especie es " + especie);
+    }
+    //metodo para registrar el nombre
+    public void registrarNombre(String nombre) {
+        System.out.println("El animal " + nombre + " ha sido medido y su nombre es " + nombre);
+    }
+    //metodo para registrar el sexo
+    public void registrarSexo(String sexo) {
+        System.out.println("El animal " + nombre + " ha sido medido y su sexo es " + sexo);
+    }
+    //metodo para registrar el tipo
+    public void registrarTipo(String tipo) {
+        System.out.println("El animal " + nombre + " ha sido medido y su tipo es " + tipo);
+    }
+    //metodo para registrar el id
+    public void registrarId(int id) {
+        System.out.println("El animal " + nombre + " ha sido medido y su id es " + id);
+    }
+    // metodo para registrar la salud
+    public void registrarSalud(boolean salud) {
+        System.out.println(buenasalud(salud));
+    }
+
+    // metodo para registrar el comportamiento
+    public void registrarComportamiento(boolean comportamiento) {
+        System.out.println(buencomportamiento(comportamiento));
+    }
+
+
 
     
 
