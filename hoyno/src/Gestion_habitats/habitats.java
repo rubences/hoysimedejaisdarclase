@@ -1,8 +1,14 @@
 package Gestion_habitats;
 
 public class habitats {
+    float temperatura;
+    float humedad;
+    boolean limpieza;
 
-    public habitats() {
+    public habitats(float temperatura,float humedad,boolean limpieza) {
+        this.temperatura = temperatura;
+        this.humedad = humedad;
+        this.limpieza = limpieza;
     }
 
     @Override
@@ -32,6 +38,30 @@ public class habitats {
     public int hashCode() {
         // TODO Auto-generated method stub
         return super.hashCode();
+    }
+
+    public float getTemperatura() {
+        return temperatura;
+    }
+
+    public void setTemperatura(float temperatura) {
+        this.temperatura = temperatura;
+    }
+
+    public float getHumedad() {
+        return humedad;
+    }
+
+    public void setHumedad(float humedad) {
+        this.humedad = humedad;
+    }
+
+    public boolean isLimpieza() {
+        return limpieza;
+    }
+
+    public void setLimpieza(boolean limpieza) {
+        this.limpieza = limpieza;
     }
     
 }
